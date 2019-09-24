@@ -1,0 +1,29 @@
+{
+  "name": "proyecto-express-2",
+  "version": "1.0.0",
+  "description": "Login Platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "lint": "standard",
+    "lint-fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProyectosNode/Pro_Exp_1.git"
+  },
+  "author": "IsaiRC93",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProyectosNode/Pro_Exp_1/issues"
+  },
+  "homepage": "https://github.com/ProyectosNode/Pro_Exp_1#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2",
+    "standard": "^14.3.1"
+  }
+}
