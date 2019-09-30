@@ -1,0 +1,37 @@
+// Compiled and minified CSS
+link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+// Compiled and minified JavaScript
+script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+link(rel='shortcut icon' type='image/x-icon' href='/static/assets/images/favicon.png')
+link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+link(rel='stylesheet' type='text/css' href='/static/assets/style.css')
+link(rel='stylesheet' type='text/css' href='/static/assets/forgot.css')
+
+title User Forgot Password
+.row
+  .col.s12
+    .container
+      #forgot-password.row
+        .col.s12.m6.l4.z-depth-4.offset-m4.card-panel.border-radius-6.forgot-card.bg-opacity-8
+          form.login-form
+            .row
+              .input-field.col.s12
+                h5.ml-4 Recuperar Contrasena
+                p.ml-4 Restablecer Contrasena
+            .row
+              .input-field.col.s12
+                i.material-icons.prefix.pt-2 person_outline
+                input#email(type='email')
+                label.center-align(for='email') Email
+            .row
+              .input-field.col.s12
+                a.btn.waves-effect.waves-light.border-round.gradient-45deg-purple-deep-orange.col.s12.mb-1(href='index.html')
+                  | Restablecer
+                  | Contrasena
+            .row
+              .input-field.col.s6.m6.l6
+                p.margin.medium-small
+                  a(href='/') Acceder
+              .input-field.col.s6.m6.l6
+                p.margin.right-align.medium-small
+                  a(href='/register') Registrarse

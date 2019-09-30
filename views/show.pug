@@ -1,0 +1,131 @@
+// Compiled and minified CSS
+link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+// Compiled and minified JavaScript
+script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+link(rel='shortcut icon' type='image/x-icon' href='/static/images/favicon.png')
+link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+link(rel='stylesheet' type='text/css' href='./static/assets/animate.css')
+link(rel='stylesheet' type='text/css' href='/static/assets/chartist.min.css')
+link(rel='stylesheet' type='text/css' href='/static/assets/chartist-plugin-tooltip.css')
+link(rel='stylesheet' type='text/css' href='/static/assets/style.css')
+link(rel='stylesheet' type='text/css' href='/static/assets/dashboard-modern.css')
+
+title Dashboard
+header#header.page-topbar
+  .navbar.navbar-fixed
+    nav.navbar-main.navbar-color.nav-collapsible.sideNav-lock.navbar-dark.gradient-45deg-indigo-purple.no-shadow
+      .nav-wrapper
+        .header-search-wrapper.hide-on-med-and-down
+          i.material-icons search
+          input.header-search-input.z-depth-2(type='text' name='Search' placeholder='Explore Materialize')
+        // notifications-dropdown
+        ul#notifications-dropdown.dropdown-content
+          li
+            h6
+              | NOTIFICATIONS
+              span.new.badge 5
+          li.divider
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.cyan.small add_shopping_cart
+              |  A new order has been placed!
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 2 hours ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.red.small stars
+              |  Completed the task
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 3 days ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.teal.small settings
+              |  Settings updated
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 4 days ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.deep-orange.small today
+              |  Director meeting started
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 6 days ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.amber.small trending_up
+              |  Generate monthly report
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 1 week ago
+        // profile-dropdown
+        ul#profile-dropdown.dropdown-content
+          li
+            a.grey-text.text-darken-1(href='user-profile-page.html')
+              i.material-icons person_outline
+              |  Profile
+          li
+            a.grey-text.text-darken-1(href='app-chat.html')
+              i.material-icons chat_bubble_outline
+              |  Chat
+          li
+            a.grey-text.text-darken-1(href='page-faq.html')
+              i.material-icons help_outline
+              |  Help
+          li.divider
+          li
+            a.grey-text.text-darken-1(href='user-lock-screen.html')
+              i.material-icons lock_outline
+              |  Lock
+          li
+            a.grey-text.text-darken-1(href='user-login.html')
+              i.material-icons keyboard_tab
+              |  Logout
+      nav.display-none.search-sm
+        .nav-wrapper
+          form
+            .input-field
+              input.search-box-sm(type='search' required='')
+              label.label-icon(for='search')
+                i.material-icons.search-sm-icon search
+              i.material-icons.search-sm-close close
+// END: Header
+// BEGIN: SideNav
+aside.sidenav-main.nav-expanded.nav-lock.nav-collapsible.sidenav-light.sidenav-active-square
+  .brand-sidebar
+    h1.logo-wrapper
+      a.brand-logo.darken-1(href='/l')
+        img(src='/static/images/logo1.png' alt='materialize logo')
+        h6 #{email}
+      a.navbar-toggler(href='#')
+        i.material-icons radio_button_checked
+  ul#slide-out.sidenav.sidenav-collapsible.leftside-navigation.collapsible.sidenav-fixed.menu-shadow(data-menu='menu-navigation' data-collapsible='menu-accordion')
+    li.active.bold
+      a.collapsible-header.waves-effect.waves-cyan(href='#')
+        i.material-icons settings_input_svideo
+        span.menu-title(data-i18n='') Dashboard
+        span.badge.badge.pill.orange.float-right.mr-10 3
+      .collapsible-body
+        ul.collapsible.collapsible-sub(data-collapsible='accordion')
+          li.active
+            a.collapsible-body.active(href='dashboard-modern.html' data-i18n='')
+              i.material-icons radio_button_unchecked
+              span Modern
+          li
+            a.collapsible-body(href='dashboard-ecommerce.html' data-i18n='')
+              i.material-icons radio_button_unchecked
+              span eCommerce
+          li
+            a.collapsible-body(href='dashboard-analytics.html' data-i18n='')
+              i.material-icons radio_button_unchecked
+              span Analytics
+// END: SideNav
+// BEGIN: Page Main
+#main
+  .row
+    .content-wrapper-before.gradient-45deg-indigo-purple
+    .col.s12
+      .container
+  // END: Page Main
+footer.page-footer.footer.footer-static.footer-dark.gradient-45deg-indigo-purple.gradient-shadow.navbar-border.navbar-shadow
+  .footer-copyright
+    .container
+      span
+        | &copy; 2019          
+        a(href='/e' target='_blank') EXTREME DASHBOARD
+        |  All rights reserved.
+      span.right.hide-on-small-only
+        | Design and Developed by 
+        a(href='/') EXTREME STUDIOS

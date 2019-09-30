@@ -1,0 +1,42 @@
+// Compiled and minified CSS
+link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+// Compiled and minified JavaScript
+script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+link(rel='shortcut icon' type='image/x-icon' href='/static/images/favicon.png')
+link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+link(rel='stylesheet' type='text/css' href='/static/assets/style.css')
+link(rel='stylesheet' type='text/css' href='/static/assets/register.css')
+
+title User Register
+.row
+  .col.s12
+    .container
+      #register-page.row
+        .col.s12.m6.l4.z-depth-4.card-panel.border-radius-6.register-card.bg-opacity-8
+          form.login-form
+            .row
+              .input-field.col.s12
+                h5.ml-4 Registro
+                p.ml-4 Bienvedido (a)!
+            .row.margin
+              .input-field.col.s12
+                i.material-icons.prefix.pt-2 mail_outline
+                input#email(type='email')
+                label(for='email') Email
+            .row.margin
+              .input-field.col.s12
+                i.material-icons.prefix.pt-2 lock_outline
+                input#password(type='password')
+                label(for='password') Contrasena
+            .row.margin
+              .input-field.col.s12
+                i.material-icons.prefix.pt-2 lock_outline
+                input#password-again(type='password')
+                label(for='password-again') Confirmar Contrasena
+            .row
+              .input-field.col.s12
+                a.btn.waves-effect.waves-light.border-round.gradient-45deg-purple-deep-orange.col.s12(href='/') Registrar
+            .row
+              .input-field.col.s12
+                p.margin.medium-small
+                  a(href='/login') Ya tienes una cuenta? Acceder

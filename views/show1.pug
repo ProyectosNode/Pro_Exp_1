@@ -1,0 +1,65 @@
+// Compiled and minified CSS
+link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+// Compiled and minified JavaScript
+script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+doctype html
+head
+  title Dashboard
+  link(rel='shortcut icon' type='image/x-icon' href='/static/images/favicon.png')
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='./static/assets/animate.css')
+  link(rel='stylesheet' type='text/css' href='/static/assets/chartist.min.css')
+  link(rel='stylesheet' type='text/css' href='/static/assets/chartist-plugin-tooltip.css')
+  link(rel='stylesheet' type='text/css' href='/static/assets/style.css')
+  link(rel='stylesheet' type='text/css' href='/static/assets/dashboard-modern.css')
+// BEGIN: Header
+header#header.page-topbar
+  .navbar.navbar-fixed
+    nav.navbar-main.navbar-color.nav-collapsible.sideNav-lock.navbar-dark.gradient-45deg-indigo-purple.no-shadow
+      .nav-wrapper
+        .header-search-wrapper.hide-on-med-and-down
+          i.material-icons search
+          input.header-search-input.z-depth-2(type='text' name='Search' placeholder='Explore Materialize')
+      nav.display-none.search-sm
+        .nav-wrapper
+          form
+            .input-field
+              input.search-box-sm(type='search' required='')
+              label.label-icon(for='search')
+                i.material-icons.search-sm-icon search
+              i.material-icons.search-sm-close close
+// END: Header
+// BEGIN: SideNav
+aside.sidenav-main.nav-expanded.nav-lock.nav-collapsible.sidenav-light.sidenav-active-square
+  .brand-sidebar
+    h1.logo-wrapper
+      a.brand-logo.darken-1(href='/show')
+        img(src='/static/images/logo.png' alt='logo')
+        span.logo-text.hide-on-med-and-down Bienvenido (a)
+      a.navbar-toggler(href='#')  
+  ul#slide-out.sidenav.sidenav-collapsible.leftside-navigation.collapsible.sidenav-fixed.menu-shadow(data-menu='menu-navigation' data-collapsible='menu-accordion')
+  .navigation-background
+  a.sidenav-trigger.btn-sidenav-toggle.btn-floating.btn-medium.waves-effect.waves-light.hide-on-large-only(href='#' data-target='slide-out')
+    i.material-icons menu
+// END: SideNav
+// BEGIN: Page Main
+#main
+  .row
+    .content-wrapper-before.gradient-45deg-indigo-purple
+    .col.s12
+      .container
+        h4 #{email}
+    // / Intro
+// END: Page Main
+// BEGIN: Footer
+footer.page-footer.footer.footer-static.footer-dark.gradient-45deg-indigo-purple.gradient-shadow.navbar-border.navbar-shadow
+  .footer-copyright
+    .container
+      span
+        | &copy; 2019          
+        a(href='https://1.envato.market/pixinvent_portfolio' target='_blank') PIXINVENT
+        |  All rights reserved.
+      span.right.hide-on-small-only
+        | Design and Developed by 
+        a(href='https://1.envato.market/materialize_admin') PIXINVENT
+// END: Footer

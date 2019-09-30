@@ -1,7 +1,7 @@
 /*----------------------------------------
     Login Page
 ------------------------------------------*/
-.login-bg
+.forgot-bg
 {
     background-image: url('../images/flat-bg.jpg');
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
             background-size: cover;
 }
 
-#login-page
+#forgot-password
 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -30,7 +30,7 @@
     -ms-flex-align: center;
             align-items: center;
 }
-#login-page .card-panel.border-radius-6.login-card
+#forgot-password .card-panel.border-radius-6.forgot-card
 {
     margin-left: 0 !important;
 }
